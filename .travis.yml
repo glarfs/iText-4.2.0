@@ -1,0 +1,6 @@
+language: java
+jdk: oraclejdk7
+before_install: true
+install: true
+before_script: true
+script: mvn test -q
