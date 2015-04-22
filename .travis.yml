@@ -2,5 +2,8 @@ language: java
 jdk: oraclejdk7
 before_install: true
 install: true
-before_script: true
+before_script: 
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  
 script: mvn test -q
